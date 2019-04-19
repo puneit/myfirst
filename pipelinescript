@@ -7,7 +7,8 @@ node {
        sh label: '', script: 'echo  \'this is new file\' > NewFile'
        
    }
-   stage('print file'){
+   stage('print repo'){
        sh label: '', script: 'cat NewFile'
+       sh label: '', script: 'ls https://github.com/puneit/myfirst.git'
    }
 }
