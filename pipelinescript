@@ -9,6 +9,6 @@ node {
    }
    stage('print repo'){
        git 'https://github.com/puneit/myfirst.git'
-       sh label: '', script: 'ls https://github.com/puneit/myfirst/*'
+       sh label: '', script: 'ls master'
    }
 }
