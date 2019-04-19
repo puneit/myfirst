@@ -8,7 +8,7 @@ node {
        
    }
    stage('print repo'){
-       sh label: '', script: 'cat NewFile'
-       sh label: '', script: 'ls https://github.com/puneit/myfirst.git'
+       git 'https://github.com/puneit/myfirst.git'
+       sh label: '', script: 'ls https://github.com/puneit/myfirst'
    }
 }
